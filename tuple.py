@@ -1,0 +1,8 @@
+colors = ("red", "green", "blue","pink","yellow","purple","orange","brown")
+print(colors)
+print(colors.count('yellow'))
+# colors.append('black')
+colors1 = list(colors)
+colors1.append('black')
+colors = tuple(colors1)
+print(colors)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets learn animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80vw;
+            height: 30vh;
+            background-color: rgb(9,106,109);
+        }
+        .box{
+            width:34px;
+            height: 45px;
+            background-color: aqua;
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+            animation-direction:normal;
+            /*
+            animation-play-state:running;*/
+            /*by default fill mode none hota hai*/
+            animation-fill-mode: backwards;
+        }
+        @keyframes myanimation
+        {
+           
+            from{
+                background-color: red;
+
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+  }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

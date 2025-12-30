@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets learn specificity</title>
+    <style>
+        .yellow{
+            color: yellow !important;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        [data-x = a]{
+            background-color: red; 
+        }
+        a.harryclass.rohan-class[href]:hover{ /*1 +10+10+10+10 ->41*/
+            color: red;
+        }
+        /*[data-x = a] attribute selector*/
+        /* specificity->
+        inline style > id sselector > class selector > element selector > universal selector */
+    </style>
+</head>
+<body>
+    <h1 class= "yellow cred cpurple" data-x="a" >lets learn css specificity</h1>
+</body>
+</html>

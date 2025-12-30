@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Lets learn it</title>
+</head>
+
+<body>
+    <h1>Form to apply for sigma web development course - TA</h1>
+    <form>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your name">
+        <br>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <br>
+        subscribe to newsletter<input type="checkbox" id="check" name="check" value="check">
+        <br>
+        <textarea name="comment" rows = '4'cols = '50' placeholder="Enter your comment">Enter your comment here....</textarea>
+        <br>
+        <label for="password">password</label>
+        <input type="numrical" name="password" id="password" placeholder="Enter your password" pattern="[a-zA-Z0-9@#_$%]{8,}" required>
+        <br>
+        email<input type="text" name="email" id="email" placeholder="Enter your email">
+        <br>
+        <input type="numrical" name="phone" id="phone" placeholder="Enter your phone number" autofocus>
+        <br>
+        choose your favorate car <select name="cars">
+            <option value="audi">audi</option>
+            <option value="bmw">bmw</option>
+            <option value="mercedes">mercedes</option>
+            <option value="suzuki">suzuki</option>
+            <option value="toyota">toyota</option>
+            <option value="honda">honda</option>
+            <option value="ford">ford</option>
+            <option value="alto">alto</option>
+        </select>
+    </form>
+</body>
+
+</html>

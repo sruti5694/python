@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets learn transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+           border: 2px solid purple;
+           margin:20px auto
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 2px solid black; 
+          /*  transform: rotate(1turn);*/
+           /*transform:rotateX(40deg);*/
+           /*transform: rotateZ(50deg);*/
+          /* transform: scale(1.5);*/
+           /*khechna x and y axis*/
+          /* transform: skew(20deg, 10deg);*/
+
+          /*if you want to apply multiple tranform properties in one you jus add space between properties*/
+
+           /* transform: translateY(-100%) skewX(40deg) translateX(-45%);*/
+
+    
+          /*width ke 100% translate ho jayega*/
+          /*transform: translateX(100%);*/
+            transform:translateX(100%) rotate(45deg);
+            transform-origin: 0% 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

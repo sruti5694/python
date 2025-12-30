@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets do exercise5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav{
+            background-color: rgb(153, 146, 148);
+            position: sticky;
+            top:0px;
+            
+            
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            height: 12vh;
+        }
+        ul li{
+            padding: 20px;
+            margin: 12px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            height: 80vh;
+            max-height: 100vh;
+            margin: 30px;
+            padding: 20px;
+            background-color: rgb(148, 241, 241);
+        }
+        
+        
+        .box{
+            height: 500px; 
+            width: 400px;
+            background-color:aliceblue;
+            margin: 23px;
+            border-radius: 14px;
+            
+        }
+        
+        .article{
+        display: flex;
+        height: 20vh;
+        margin:27px;
+        background-color: rgb(44, 198, 96);
+        border-radius: 17px;
+        }
+        .footer{
+            display: flex;
+            height: 15vh;
+            margin:0px;
+          background-color: rgb(228, 177, 232);
+      
+           
+            }
+            .footer img:nth-of-type(1){
+                height: 55px;
+                width: 55px;
+                border: 2px solid black;
+                position: fixed;
+                right:80px;
+                bottom: 20px;
+                
+            }
+            
+        .black{
+            background-color: rgb(24, 23, 23);
+        }
+        .box img:nth-of-type(1){
+          height:98%;
+          width: 97%; /* the content is overflow when i set height,width in piexles avoide this we can %sizing operator the content will not be overflow */
+          border-radius: 10px;
+          margin: 6px;
+        }
+        .box img:nth-of-type(2){
+           height: 98%;
+            width: 97%;
+            border-radius: 10px;
+            margin: 6px;
+
+        }
+        .footer img{
+            height: auto;
+            width: 100%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="black">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+   
+    <div class="container">
+
+       <div class="box">
+          <img src="pexels-shkrabaanthony-6207729.jpg">
+       </div>
+
+       <div class="box">
+            <img src="pexels-shkrabaanthony-6207744.jpg">
+       </div>
+       </div>
+
+       <div class="article"></div>
+        
+
+       <div class="footer">
+        <img src="icon-icons-design-vector.jpg">
+        <img src="footer.jpg">
+        </div>
+     </div>
+
+       
+  
+
+</body>
+</html>

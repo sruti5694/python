@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design nav bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav{
+            background-color:beige;
+            position: sticky;
+            height: 12vh; 
+            width: auto;
+            border-radius: 12px;
+           /* margin: 0px auto;*/
+            /*margin: 10px 0px 10px 0px;*/
+            top:0px;
+          /* width: 80%;*/
+           
+        }
+        nav img{
+            width: auto;
+            height: 50px;
+            margin: 0px 5px 5px 0px;
+            position: absolute; 
+            top:10px;
+            left: 5px;
+            border-radius: 5px; 
+        }
+    
+        nav ul{
+            display: flex;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+           
+        }
+        ul li{
+            display: flex;
+            padding: 10px;
+            margin: 15px;
+            color: rgb(0, 0, 0);
+            justify-content: center;
+            align-items: center;
+        }
+
+       span img{
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        }
+       
+       
+        
+        @media only screen and (max-width:768px){
+            nav{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            nav ul{
+                
+                list-style: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 5px;
+                gap:5px;
+            }
+             nav img{
+            width: 5px;
+            height: 5px;
+            
+        }
+        
+        ul li{
+            padding: 8px;
+            margin: 5px;
+            text-align: center;  
+        }
+         span img{
+        height: 10px;
+        width: 10px;
+        position: relative;
+        top: 5px;
+       
+        }
+        }
+       
+       @media only screen and (max-width:768px){
+            nav{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            nav ul{
+                
+                list-style: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                gap:10px;
+            }
+             nav img{
+            width: auto;
+            height: 20px;
+            
+        }
+        ul li{
+            padding: 8px;
+            margin: 8px;
+            text-align: center;  
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Products
+                    <span><img src="down-arrow.png"></span>
+                </li>
+                <li>Pricing
+                    <span><img src="down-arrow.png"></span>
+                </li>
+                <li>Resources
+                    <span><img src="down-arrow.png"></span>
+                </li>
+                <li>About us
+                    <span><img src="down-arrow.png"></span>
+                </li>
+               
+            </ul>
+            <img src="ultra.jpeg">
+        </nav>
+  </div>
+
+</body>
+</html>

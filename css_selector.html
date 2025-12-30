@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets learn css selector</title>
+    <style>
+        /*div{ 
+            background-color: red;
+            color: black;
+        } */
+        .red{background-color: red;
+            color: black;
+        }
+        #green{
+            background-color: rgb(26, 209, 45);
+            color: black;
+        }
+        /*child selector*/
+        div > p{
+            background-color: rgb(204, 54, 79);
+        color: black;}
+        
+        /*desendent selector*/
+        div p{
+            background-color: yellow;
+            color: red;
+        }
+        
+        /*universal selector*/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        /*pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            background-color: green;
+        }
+        a:active{
+            background-color: aqua;
+        }
+
+        a:hover
+        {background-color: rgb(202, 33, 61);
+        }
+       option:first-child{
+            background-color: aqua;
+            color: black;
+        }
+        /*jha jha p apne parent ka first child hai vha vha back ground aqua krdo*/
+        p:first-child{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia vel delectus?
+    </div>
+
+    <br>
+
+    <div id="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error delectus tempora.</div>
+
+    <div>
+        <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem dicta voluptas delectus incidunt ratione, fugiat culpa, recusandae ad et blanditiis, consequuntur harum ab! Iusto at possimus perferendis ipsa sequi?</p>
+    </main>
+    </div>
+    <a href="http://www.google.com">go to google</a>
+    <select name="fruits" id="">
+        <option value="apple">apple</option>
+        <option value="bnana">bnana</option>
+        <option value="orange">orange</option>
+        <option value="maskmelon">maskmelon</option>
+    </select>
+    <main>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </main>
+</body>
+</html>

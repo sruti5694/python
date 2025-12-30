@@ -1,0 +1,23 @@
+student = {'harray',50,'rohan',85,'nimish',65,'laksh',95,'shubham',55,'priya',45,'riya',95}
+print(student)
+student.add(21)
+student.add('don_ko_pakdna')
+print(student)
+print(type(student))
+print(len(student))
+info = {'shekago','denmark','sweden','norway','finland','iceland'}
+student.update(info)
+print(student)
+student.remove('don_ko_pakdna')
+print(student)
+student.pop()
+student.discard(50)
+print(student)
+# del student
+# print(student)
+# student.clear()
+# print(student)
+student.discard('harray')
+print(student)
+student.discard('harray')
+print(student)

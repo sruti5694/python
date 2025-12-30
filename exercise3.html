@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets create card using html,css</title>
+    <style>
+        body{
+            background-color: #d0c7bb;
+            display: inline-flex;
+            justify-content:center ;
+            width: 97vw;
+        }
+        .container{
+            width: 380px;
+            height: auto;
+            padding: 2px;
+            margin: 2px;
+            border: 2px solid #8080804a;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background-color:azure;
+            max-width: 500px;
+            
+        }
+        img{
+            height: 289px;
+            width: 369px;
+            padding: 4px;
+            margin: 2px;
+           /* border: 2px solid #8080804d;*/
+            box-sizing: border-box;
+            border-radius: 20px;
+            max-width: 500px;
+        }
+        .button{
+            display:inline-flex;
+            align-items: center;
+
+        }
+        .button button {
+            padding: 11px;
+            margin: 9px 17px;
+            border: 2px solid gray;
+            border-radius: 14px;
+        }
+        main{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0px;
+            margin: 0px 17px;
+            
+        }
+       
+        footer button{
+            padding: 9px;
+            margin: 9px 146px;
+            border: 2px solid gray;
+            border-radius: 18px;
+            background-color:rgb(79 224 224);
+            color:navy; 
+            
+        }
+        @media only screen and (max-width:365px)
+        {
+            .container{
+               width: 279px;
+               height: 73vh;
+                padding: 2px;
+                margin: 2px;
+                border: 2px solid #8080804a;
+                box-sizing: border-box;
+                border-radius: 10px;
+                background-color:azure;
+               
+                
+            }
+            img{
+                width: 270px;
+                height: auto;
+                padding: 1px;
+                margin: 1px;
+               /* border: 2px solid #8080804d;*/
+                box-sizing: border-box;
+                border-radius: 10px;
+              
+            }
+            footer button{
+                padding: 12px;
+                margin: 17px 92px;
+                border: 2px solid gray;
+                border-radius: 18px;
+                background-color:rgb(79 224 224);
+                color:navy; 
+                
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <img src="man-is-sitting-boat.avif">
+        </div>
+
+        <div class="button">
+            <button>Nature</button>
+            <button>Lake</button>
+        </div>
+
+        <main>
+            <h2>Lago di Braies</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum nisi deleniti quod quasi placeat. Amet repellendus suscipit quas obcaecati molestiae eveniet eum recusandae nemo. Optio, enim. Ab, illo eligendi?</main>
+
+       <footer>
+        <button>ReadMore</button>
+       </footer>
+
+    </div>
+</body>
+</html> 

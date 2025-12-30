@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-color navbar</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+        --color:rgb(48, 48, 218);
+        --secolor:rgb(162, 162, 190);
+        --fontfamily: 'Franklin Gothic Medium', 'Arial Narrow';
+        --defpad:23px;
+        
+    }
+    
+    nav ul{
+        background-color: gray;
+        display: flex;
+    }
+    ul li{
+        padding:var(--defpad);
+        list-style: none;
+        font-family: var(--fontfamily);
+        border: 12px solid var(--secolor);
+        font-style: italic;
+        font-size: 20px;
+    }
+    ul li:nth-child(1){
+        --color:rgb(210, 91, 17);
+        background-color: var(--color);
+    }
+    ul li:nth-child(2){
+        --color:rgb(15, 224, 15);
+        background-color: var(--color);
+    }
+    ul li:nth-child(3){
+        --color:rgb(255, 0, 179);
+        background-color: var(--color);
+    }
+    ul li:nth-child(4){
+        --color:rgb(255, 0, 0) ;
+        background-color: var(--color);
+    }
+    ul li:nth-child(5){
+        --color:rgb(38, 167, 242);
+        background-color: var(--color);
+    }
+    ul li:nth-child(6){
+        --color:rgb(96, 40, 78);
+        background-color: var(--color);
+    }
+    ul li:nth-child(7){
+        --color:yellow;
+        background-color: var(--color);
+    }
+    ul li:nth-child(8){
+        --color:rgb(198, 82, 102);
+        background-color: var(--color);
+    }
+   </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>All</li>
+            <li>Sell</li>
+            <li>Bestsellers</li>
+            <li>Today's Deals</li>
+            <li>Mobiles</li>
+            <li>Prime</li>
+            <li>Fashion</li>
+            <li>Customer Service</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
